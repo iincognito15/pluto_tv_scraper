@@ -1,20 +1,21 @@
 name: Auto Pluto MX Update
 
 on:
-  workflow_dispatch: # Esto activa el botón para iniciarlo manualmente
+  workflow_dispatch:
 
 jobs:
   update-playlist:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Forzamos una versión estable de Ubuntu
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # Actualizado a v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4 # Actualizado a v4
       with:
         node-version: '16'
+        cache: 'npm'
 
     - name: Install dependencies
       run: npm install
