@@ -5,16 +5,16 @@ on:
 
 jobs:
   update-playlist:
-    runs-on: ubuntu-24.04 # Forzamos una versión estable de Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4 # Actualizado a v4
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4 # Actualizado a v4
+      uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '24' # Forzamos la versión compatible actual del servidor
         cache: 'npm'
 
     - name: Install dependencies
