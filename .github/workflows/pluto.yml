@@ -2,6 +2,8 @@ name: Auto Pluto MX Update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '34 4 * * *' # Se ejecutará automáticamente todos los días a las 4:34 AM
 
 jobs:
   update-playlist:
