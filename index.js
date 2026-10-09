@@ -11,7 +11,7 @@ const check = (minver) => {
 	}
 }
 
-check(16);
+// check(16);
 
 (async function() {
 	const fs = require('fs');
