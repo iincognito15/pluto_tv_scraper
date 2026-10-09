@@ -1,19 +1,26 @@
 {
-	"outdir": ".",
-	"clientID": "00000000-0000-0000-0000-000000000000",
-	"mapping": {
-		"us": "45.50.96.71"
-	},
-	"all": false,
-	"group": "genre",
-	"regionalize": false,
-	"excludeGroups": false,
-	"excludeChannels": false,
-	"uniqueClientid": false,
-	"randomClientid": false,
-	"refresh": 0,
-	"xTvgUrl": false,
-	"ondemand": false,
-	"vlcopts": false,
-	"pipeopts": false
+  "outdir": "./output",
+  "clientID": "05859ef5-c4ad-4c13-9d77-5539b1f3a0b6",
+  "mapping": {
+    "us": "45.50.96.71",
+    "uk": "51.89.255.67",
+    "ca": "23.227.38.65",
+    "de": "91.107.201.140",
+    "fr": "51.210.0.1",
+    "es": "82.98.134.10",
+    "it": "79.137.44.85",
+    "mx": "201.144.104.1"
+  },
+  "all": true,
+  "group": "genre",
+  "regionalize": false,
+  "excludeGroups": false,
+  "excludeChannels": false,
+  "uniqueClientid": false,
+  "randomClientid": false,
+  "refresh": 0,
+  "xTvgUrl": false,
+  "ondemand": false,
+  "vlcopts": false,
+  "pipeopts": false
 }
